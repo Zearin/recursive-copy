@@ -10,14 +10,14 @@
 ## Features
 
 - Recursively copy whole directory hierarchies
-- Choose which files are copied by passing a filter function, regular expression or glob
+- Choose which files are copied by passing a filter function, regular expression, or glob
 - Rename files dynamically, including changing the output path
 - Transform file contents using streams
 - Choose whether to overwrite existing files
 - Choose whether to copy system files
 - Filters out [junk](https://www.npmjs.com/package/junk) files by default
-- Uses [graceful-fs](https://www.npmjs.com/package/graceful-fs) and [mkdirp](https://www.npmjs.com/package/mkdirp) to avoid filesystem errors
-- Emits start, finish and error events for each file that is processed
+- Uses [`graceful-fs`](https://www.npmjs.com/package/graceful-fs) and [`mkdirp`](https://www.npmjs.com/package/mkdirp) to avoid filesystem errors
+- Emits `start`, `finish`, and `error` events for each file that is processed
 - Optional promise-based interface
 
 ## Examples
@@ -115,7 +115,7 @@ copy('src', 'dest', options)
 
 ### `copy(src, dest, [options], [callback])`
 
-Recursively copy files and folders from `src` to `dest`
+Recursively copy files and folders from `src` to `dest`.
 
 #### Arguments:
 
